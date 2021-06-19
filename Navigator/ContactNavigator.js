@@ -5,7 +5,7 @@ import Contacts from "../Screens/Contacts";
 import ContactDetails from "../Screens/ContactDetails";
 import AddContacts from "../Screens/AddContacts";
 import FavoriteContacts from "../Screens/FavoriteContacts";
-
+import UpdateContact from "../Screens/UpdateContact";
 // Stack Naivgator for contacts
 const navigationStyles = {
   headerStyle: {
@@ -18,6 +18,7 @@ const contactStack = createStackNavigator(
   {
     Contacts: Contacts,
     ContactDetails: ContactDetails,
+    UpdateContact: UpdateContact,
   },
   {
     defaultNavigationOptions: navigationStyles,

@@ -21,6 +21,18 @@ const contacts = (state = intialState, action) => {
   switch (action.type) {
     case "ADD_CONTACT":
       return [...state, action.payload];
+    case "UPDATE_CONTACT":
+      // console.log("update contact");
+      return state.map((contact) => {
+        // console.log(action.payload.contactId);
+        if (contact.contactId !== action.payload.contactId) {
+          return contact;
+        } else {
+          return action.payload;
+        }
+      });
+    // console.log(updatedContact);
+
     default:
       return state;
   }

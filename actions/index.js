@@ -4,3 +4,10 @@ export const addContacts = (contactDetails) => {
     payload: contactDetails,
   };
 };
+
+export const updateContacts = (contactDetails) => {
+  return {
+    type: "UPDATE_CONTACT",
+    payload: contactDetails,
+  };
+};
